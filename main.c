@@ -4,7 +4,7 @@
 
 double myRoot(double x) // 返り値：double型
 {
-  double y;	            //返り値：double型
+  double y;             //返り値：double型
   if( x < 0 ){　　　　　//0未満
     exit(1);
   }
