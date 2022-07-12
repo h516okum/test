@@ -1,11 +1,11 @@
 #include <stdio.h>
-#include <stdlib.h>//malloc関数を使用する
-#include <math.h>//sqrt関数を使用する
+#include <stdlib.h>
+#include <math.h>       //sqrt関数
 
-double myRoot(double x) // 返り値をdouble型にする
+double myRoot(double x) // 返り値：double型
 {
-  double y;	//返り値をdouble型に
-  if( x < 0 ){　//0未満だとexit
+  double y;	            //返り値：double型
+  if( x < 0 ){　　　　　//0未満
     exit(1);
   }
   y = sqrt(x);
@@ -14,7 +14,7 @@ double myRoot(double x) // 返り値をdouble型にする
 
 int main(void)
 {
-  int i = 0; //iに0を代入
+  int i = 0; 
   double *x = (double *)malloc(sizeof(double) * 100);
 
   while( i <= 100 ){
